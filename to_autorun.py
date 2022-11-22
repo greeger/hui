@@ -18,7 +18,7 @@ huiBrightness = [4 , 3 , 0 , 0 , 0 , 3 , 4 , 0 , 4 , 3 , 0 , 3 , 4 , 1 , 0 , 0 ,
     0 , 0 , 0 , 0 , 0]
 
 if delta > (int)(list_data[0]) and delta >= 0:
-    for i in range(huiBrightness[delta] * 2):
+    for i in range(huiBrightness[delta] * 2 - 1):
         with open(filename, 'w', encoding='utf-8') as f_output:
             f_output.write((str)(delta) + '\n' + (str)(i))
             f_output.close
