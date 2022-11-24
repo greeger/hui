@@ -6,7 +6,7 @@ with open(filename) as f_input:
     list_data = f_input.readlines()
     f_input.close
 
-startdate = date(2022, 11, 27)
+startdate = date(2023, 1, 1)
 today = date.today()
 delta = (today - startdate).days
 
